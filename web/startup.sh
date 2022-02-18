@@ -1,0 +1,1 @@
+nohup ./go-mysql-transfer -config app.yml &

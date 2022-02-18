@@ -1,0 +1,43 @@
+[2022/02/18 04:27:21] [info] binlogsyncer.go:144 create BinlogSyncer with config {1001 mysql 192.168.56.80 3306 root   utf8 false false <nil> false UTC false 0 0s 0s 0 false false 0}
+[2022/02/18 04:27:21] [info] dump.go:204 skip dump, no mysqldump
+[2022/02/18 04:27:21] [info] binlogsyncer.go:360 begin to sync binlog from position (, 0)
+[2022/02/18 04:27:21] [info] sync.go:25 start sync binlog at binlog file (, 0)
+[2022/02/18 04:27:21] [info] binlogsyncer.go:777 rotate to (mysql-bin.000001, 4)
+[2022/02/18 04:27:21] [info] sync.go:68 received fake rotate event, next log name is mysql-bin.000001
+[2022/02/18 04:27:21] [info] sync.go:235 table structure changed, clear table cache: test.aaa
+[2022/02/18 04:27:21] [info] sync.go:235 table structure changed, clear table cache: test.aaa
+2022-02-18 04:27:21	info	save position mysql-bin.000001 849
+2022-02-18 04:27:21	info	save position mysql-bin.000001 1104
+2022-02-18 04:27:21	info	topic: aaa, message: {"action":"insert","timestamp":1645169640,"date":{"id":1,"title":"aaadfdfdf"}}
+2022-02-18 04:27:21	info	topic: aaa, message: {"action":"update","timestamp":1645169670,"date":{"id":12,"title":"aaadfdfdf"}}
+2022-02-18 04:27:21	info	topic: aaa, message: {"action":"update","timestamp":1645169780,"date":{"id":12,"title":"aaadfdfdfppp"}}
+2022-02-18 04:27:21	info	topic: aaa, message: {"action":"insert","timestamp":1645173275,"date":{"id":13,"title":"2222222222222222222"}}
+2022-02-18 04:27:21	info	处理完成 4 条数据
+[2022/02/18 04:27:35] [info] canal.go:242 closing canal
+[2022/02/18 04:27:35] [info] binlogsyncer.go:176 syncer is closing...
+2022-02-18 04:27:35	error	http: Server closed
+2022-02-18 04:27:35	info	Canal is Closed
+[2022/02/18 04:27:35] [info] binlogsyncer.go:850 kill last connection id 30
+[2022/02/18 04:27:35] [info] binlogsyncer.go:203 syncer is closed
+[2022/02/18 04:29:06] [info] binlogsyncer.go:144 create BinlogSyncer with config {1001 mysql 192.168.56.80 3306 root   utf8 false false <nil> false UTC false 0 0s 0s 0 false false 0}
+[2022/02/18 04:29:06] [info] dump.go:199 skip dump, use last binlog replication pos (mysql-bin.000001, 1104) or GTID set <nil>
+[2022/02/18 04:29:06] [info] binlogsyncer.go:360 begin to sync binlog from position (mysql-bin.000001, 1104)
+[2022/02/18 04:29:06] [info] sync.go:25 start sync binlog at binlog file (mysql-bin.000001, 1104)
+[2022/02/18 04:29:06] [info] binlogsyncer.go:777 rotate to (mysql-bin.000001, 1104)
+[2022/02/18 04:29:06] [info] sync.go:68 received fake rotate event, next log name is mysql-bin.000001
+2022-02-18 04:29:06	info	topic: aaa, message: {"action":"insert","timestamp":1645169640,"date":{"id":1,"title":"aaadfdfdf"}}
+2022-02-18 04:29:06	info	topic: aaa, message: {"action":"update","timestamp":1645169670,"date":{"id":12,"title":"aaadfdfdf"}}
+2022-02-18 04:29:06	info	topic: aaa, message: {"action":"update","timestamp":1645169780,"date":{"id":12,"title":"aaadfdfdfppp"}}
+2022-02-18 04:29:06	info	topic: aaa, message: {"action":"insert","timestamp":1645173275,"date":{"id":13,"title":"2222222222222222222"}}
+2022-02-18 04:29:06	info	处理完成 4 条数据
+[2022/02/18 04:53:44] [info] binlogsyncer.go:144 create BinlogSyncer with config {1001 mysql 192.168.56.80 3306 root   utf8 false false <nil> false UTC false 0 0s 0s 0 false false 0}
+[2022/02/18 04:53:44] [info] dump.go:199 skip dump, use last binlog replication pos (mysql-bin.000001, 1104) or GTID set <nil>
+[2022/02/18 04:53:44] [info] binlogsyncer.go:360 begin to sync binlog from position (mysql-bin.000001, 1104)
+[2022/02/18 04:53:44] [info] sync.go:25 start sync binlog at binlog file (mysql-bin.000001, 1104)
+[2022/02/18 04:53:44] [info] binlogsyncer.go:777 rotate to (mysql-bin.000001, 1104)
+[2022/02/18 04:53:44] [info] sync.go:68 received fake rotate event, next log name is mysql-bin.000001
+2022-02-18 04:53:44	info	topic: aaa, message: {"action":"insert","timestamp":1645169640,"date":{"id":1,"title":"aaadfdfdf"}}
+2022-02-18 04:53:44	info	topic: aaa, message: {"action":"update","timestamp":1645169670,"date":{"id":12,"title":"aaadfdfdf"}}
+2022-02-18 04:53:44	info	topic: aaa, message: {"action":"update","timestamp":1645169780,"date":{"id":12,"title":"aaadfdfdfppp"}}
+2022-02-18 04:53:44	info	topic: aaa, message: {"action":"insert","timestamp":1645173275,"date":{"id":13,"title":"2222222222222222222"}}
+2022-02-18 04:53:44	info	处理完成 4 条数据

@@ -1,0 +1,36 @@
+[2022/02/18 02:27:26] [info] binlogsyncer.go:144 create BinlogSyncer with config {1001 mysql 192.168.56.80 3306 root   utf8 false false <nil> false UTC false 0 0s 0s 0 false false 0}
+[2022/02/18 02:33:35] [info] binlogsyncer.go:144 create BinlogSyncer with config {1001 mysql 192.168.56.80 3306 root   utf8 false false <nil> false UTC false 0 0s 0s 0 false false 0}
+[2022/02/18 02:33:35] [info] dump.go:204 skip dump, no mysqldump
+[2022/02/18 02:33:35] [info] binlogsyncer.go:360 begin to sync binlog from position (, 0)
+[2022/02/18 02:33:35] [info] sync.go:25 start sync binlog at binlog file (, 0)
+[2022/02/18 02:33:35] [info] binlogsyncer.go:777 rotate to (mysql-bin.000001, 4)
+[2022/02/18 02:33:35] [info] sync.go:68 received fake rotate event, next log name is mysql-bin.000001
+[2022/02/18 02:33:35] [info] sync.go:235 table structure changed, clear table cache: test.aaa
+[2022/02/18 02:33:35] [info] sync.go:235 table structure changed, clear table cache: test.aaa
+2022-02-18 02:33:35	info	save position mysql-bin.000001 849
+2022-02-18 02:33:35	info	save position mysql-bin.000001 1104
+2022-02-18 02:34:00	info	action: insert, structure: String ,key: 1 ,field: , value: {"id":1,"title":"aaadfdfdf"}
+2022-02-18 02:34:00	info	处理完成 1 条数据
+2022-02-18 02:34:00	info	save position mysql-bin.000001 1393
+2022-02-18 02:34:30	info	action: update, structure: String ,key: 12 ,field: , value: {"id":12,"title":"aaadfdfdf"}
+2022-02-18 02:34:30	info	处理完成 1 条数据
+2022-02-18 02:34:30	info	save position mysql-bin.000001 1708
+[2022/02/18 02:34:48] [info] canal.go:241 closing canal
+[2022/02/18 02:34:48] [info] binlogsyncer.go:176 syncer is closing...
+2022-02-18 02:34:48	info	Canal is Closed
+[2022/02/18 02:34:48] [info] binlogsyncer.go:850 kill last connection id 12
+[2022/02/18 02:34:48] [info] binlogsyncer.go:203 syncer is closed
+[2022/02/18 02:36:06] [info] binlogsyncer.go:144 create BinlogSyncer with config {1001 mysql 192.168.56.80 3306 root   utf8 false false <nil> false UTC false 0 0s 0s 0 false false 0}
+[2022/02/18 02:36:06] [info] dump.go:199 skip dump, use last binlog replication pos (mysql-bin.000001, 1708) or GTID set <nil>
+[2022/02/18 02:36:06] [info] binlogsyncer.go:360 begin to sync binlog from position (mysql-bin.000001, 1708)
+[2022/02/18 02:36:06] [info] sync.go:25 start sync binlog at binlog file (mysql-bin.000001, 1708)
+[2022/02/18 02:36:06] [info] binlogsyncer.go:777 rotate to (mysql-bin.000001, 1708)
+[2022/02/18 02:36:06] [info] sync.go:68 received fake rotate event, next log name is mysql-bin.000001
+2022-02-18 02:36:20	info	action: update, structure: String ,key: 12 ,field: , value: id=12,title=aaadfdfdfppp
+2022-02-18 02:36:20	info	处理完成 1 条数据
+2022-02-18 02:36:20	info	save position mysql-bin.000001 2026
+[2022/02/18 02:59:17] [info] canal.go:241 closing canal
+[2022/02/18 02:59:17] [info] binlogsyncer.go:176 syncer is closing...
+2022-02-18 02:59:17	info	Canal is Closed
+[2022/02/18 02:59:17] [info] binlogsyncer.go:850 kill last connection id 15
+[2022/02/18 02:59:17] [info] binlogsyncer.go:203 syncer is closed
